@@ -1,0 +1,14 @@
+{
+  "name": "clean-my-folder",
+  "version": "1.0.0",
+  "description": "A Node based GUI app for organizing folders on your computer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ankit sejwal",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.0.1"
+  }
+}
