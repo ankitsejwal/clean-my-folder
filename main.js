@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, ipcMain, BrowserWindow } = require('electron');
 const path = require('path');
 
 const createWindow = function () {
@@ -15,6 +15,7 @@ app.on('window-all-closed', () => {
 });
 
 app.whenReady().then(() => {
+  ipcMain.handle('ping', () => 'pong');
   createWindow();
 
   app.on('activate', () => {
